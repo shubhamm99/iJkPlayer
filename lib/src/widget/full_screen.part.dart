@@ -201,6 +201,6 @@ class _RotateBoxProvider extends InheritedWidget {
   }
 
   static _RotateBoxProvider of(BuildContext context) {
-    return context.inheritFromWidgetOfExactType(_RotateBoxProvider);
+    return context.dependOnInheritedWidgetOfExactType<_RotateBoxProvider>();
   }
 }
