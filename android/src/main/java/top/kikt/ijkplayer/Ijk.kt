@@ -336,7 +336,7 @@ class Ijk(private val registry: PluginRegistry.Registrar, private val options: M
                 tmpFile?.delete()
             }
             notifyChannel.dispose()
-            methodChannel.setMethodCallHandler(null)
+            // methodChannel.setMethodCallHandler(null)
             textureMediaPlayer.stop()
         }
         tryCatchError {
