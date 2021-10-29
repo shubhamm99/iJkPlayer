@@ -25,7 +25,7 @@ class IjkplayerPlugin(private val registrar: Registrar) : MethodCallHandler {
     private fun handleMethodCall(call: MethodCall, result: Result) {
         when (call.method) {
             "init" -> {
-                // manager.disposeAll()
+                manager.disposeAll()
                 result.success(true)
             }
             "create" -> {
